@@ -20,7 +20,7 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="fas fa-address-card fa-2x"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -30,9 +30,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#projects">Projects</a></li>
 								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="https://www.linkedin.com/in/jesus-mallol-diaz/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -42,22 +41,20 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I am a Master's student with three years of research experience in diverse disciplines of biology and environmental science. Currently seeking opportunities to apply and continue developing my skills in data analytics. By the way, check out my <a href="#projects">awesome work!</a>.</p>
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<p>I am a Master's student with three years of research experience in diverse disciplines of biology and environmental science. Currently seeking opportunities to apply and continue developing my skills in data analytics. By the way, check out my <a href="#projects">awesome work!</a></p>
 							</article>
 
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Here you will find a selection of my best work on the following topics:</p>
+								<p>Here you will find a selection of my work on the following topics:</p>
 								<nav>
 									<ul>
 										<li><a href="#data_analysis">📊 Working with Data</a></li>
-										<li><a href="#research">🔬 My research in biology and physical geography</a></li>
+										<li><a href="#research">🔬 My Research</a></li>
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
@@ -72,8 +69,25 @@
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
-								<span class="image main"><img src="images/Antigen.jpg" alt="" /></span>
-								<p>Here you will find data visualizations created with Python and R:</p>
+								<h3>Ecosystem Modelling (LPJ-GUESS)</h3>
+								<p><b>Uncertainty and sensitivity analysis</b></p>
+								<p>The following figures where produced using the data visualization libraries <b>Matplotlib</b> and <b>Seaborn</b>. The range of uncertainty was created using the <b>matplotlib.pyplot.fill_between</b> function after determining the maximum and minimum values of the variables of interest. A series of randomly generated parameters were produced using a Monte Carlo approach to evaluate the sensitivity of the model to uncertainty.</p>
+								<span class="image main"><img src="images/parameter.png" alt="" /></span>
+								<p><i><b>Figure 1:</b> The root-mean-square error (RMSE) of the modelled and observed NEE (net ecosystem exchange) was calculated to determine the set of optimal parameters for minimized error. This set of parameters falls within the range of uncertainty and has a tendency towards its minimum values. Negative values obtained during summer months indicate an uptake of C, while positive values during winter months indicate a release of C. Observations fall outside of the range of uncertainty in the transition from the summer to the winter months, perhaps due to misreading errors from the eddy-covariance flux towers during unstable autumn weather.</i></p>
+								<span class="image main"><img src="images/NPP.png" alt="" /></span>
+								<p><i><b>Figure 2:</b> The cumulative change in vegetation C stocks, measured by the net primary production (NPP), experiences a linear increase over time. Uncertainty at the beginning of the simulation is very low and also experiences a gradual increase.</i></p>
+								<span class="image main"><img src="images/NEE.png" alt="" /></span>
+								<p><i><b>Figure 3:</b> The cumulative change in ecosystem C stocks, measured by the NEE, remains stable throughout the simulation. Meanwhile, uncertainty progressively increases over time.</i></p>
+								<p><b>Siberian boreal forest dynamics</b></p>
+								<p>The following figures where produced using the data visualization package <b>ggplot2</b> in <b>RStudio</b>. Carbon use efficiency (CUE) is a metric for calculating the percentage of gained carbon from photosynthesis that is issued to plant biomass production (Bradford & Crowther, 2013).</p>
+								<p>Following IPCC Atlas projections for high emission scenario RCP8.5, a series of scenarios recreating changes in temperature, precipitation, and atmospheric CO2 concentrations were simulated to determine which factors are responsible for most of the change.</p>
+								<span class="image main"><img src="images/CUE.png" alt="" /></span>
+								<p><i><b>Figure 1:</b> CUE decreases in scenarios where temperature increases.</i></p>
+								<span class="image main"><img src="images/biomass.png" alt="" /></span>
+								<p><i><b>Figure 2:</b> Increase in temperature leads to ecological succession from grasses (C3G) to boreal needle-leaved summer-green trees (BNS).</i></p>
+								<p>We can conclude that increasing temperature produces environmental conditions favorable for BNS trees, changing from a grass-dominated biome to a boreal forest. Since trees have more living tissue, they have higher respiration rates which cause the decline in CUE.</p>
+								<p><b>References:</b></p>
+								<p><i>Bradford, M. A., & Crowther, T. W. (2013). Carbon use efficiency and storage in terrestrial ecosystems. The New Phytologist, 199(1), 7–9.</i></p>
 							</article>
 
 						<!-- Research -->
@@ -85,21 +99,15 @@
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
-								<p>Visual and behavioral research:</p>
+								<h3>Poster sessions</h3>
+								<p><b>Arena trials</b></p>
 								<span class="image main"><img src="images/LEE-SIP.jpg" alt="" /></span>
-								<p>More eye-tracking experiments:</p>
+								<p><b>Eye-tracking experiments</b></p>
 								<span class="image main"><img src="images/MASS-URC.jpg" alt="" /></span>
-								<p>Antigen production protocol:</p>
+								<h3>Workflow diagrams</h3>
+								<p><b>Protein purification protocol</b></p>
 								<span class="image main"><img src="images/Antigen.jpg" alt="" /></span>
 							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
-
 
 						<!-- Elements -->
 							<article id="elements">
