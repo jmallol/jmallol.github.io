@@ -659,7 +659,7 @@ input, select, textarea {
 	}
 	#demo img:hover {
 		border: 5px solid #f4f4f4;
-	   transform: scale(2);
+	   transform: scale(1.5);
 		 -webkit-transition-duration: 1s;
 	   -moz-transition-duration: 1s;
 	   -o-transition-duration: 1s;
