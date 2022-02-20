@@ -652,6 +652,20 @@ input, select, textarea {
 		margin-top: -6px;
 	}
 
+	#demo img{
+		width: 100%;     
+		padding: 10px;
+		z-index: 3;
+	}
+	#demo img:hover {
+		border: 5px solid #f4f4f4;
+	   transform: scale(2);
+		 -webkit-transition-duration: 1s;
+	   -moz-transition-duration: 1s;
+	   -o-transition-duration: 1s;
+	   transition-duration: 1s;
+		z-index: 3;
+	}
 
 		.image:before {
 			pointer-events: none;
