@@ -45,7 +45,8 @@
 						<!-- About Me -->
 							<article id="about_me">
 								<h2 class="major">About Me</h2>
-								<p>I am a Master's student with three years of research experience in diverse branches of biology, from avian communication to visual ecology and behavior, to biochemistry. Reflecting on my past experiences in research, I have realized that the moments I enjoy the most have a common theme, which is tackling problems that involve handling large amounts of data to derive meaningful insights. My passion for science and multidisciplinary problem-solving has led me to Lund University, where I am studying physical geography and learning about biogeochemical processes, simulation modelling, climate change, and remote sensing. I am also complementing my studies by learning programming tools for data analysis, and I love applying these skills in my work. As well, I am currently seeking opportunities to keep developing my skills in data analytics and programming. By the way, check out my <a href="#projects">awesome work!</a></p>
+								<p>I am a Master's student with three years of research experience in diverse branches of biology, from avian communication to visual ecology and behavior, to biochemistry. Reflecting on my past experiences in research, I have realized that the moments I enjoy the most have a common theme, which is tackling problems that involve handling large amounts of data to derive and communicate meaningful insights.</p>
+								<p>My passion for science and multidisciplinary problem-solving has led me to Lund University, where I am studying physical geography and learning about biogeochemical processes, simulation modelling, climate change, and remote sensing. I am also complementing my studies by learning programming tools for data analysis, and I love applying these skills in my work. As well, I am currently seeking opportunities to keep developing my skills in data analytics and programming. By the way, check out my <a href="#projects">awesome work!</a></p>
 							</article>
 
 						<!-- Projects -->
@@ -54,8 +55,8 @@
 								<p>Here you will find a selection of my work on the following topics:</p>
 								<nav>
 									<ul>
-										<li><a href="#data_analysis">📊 Working with Data</a></li>
-										<li><a href="#research">🔬 My Research</a></li>
+										<li><a href="#data_analysis">📈 Working with Data</a></li>
+										<li><a href="#research">🔬 Science Communication</a></li>
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
@@ -63,14 +64,27 @@
 
 						<!-- Data Analysis -->
 							<article id="data_analysis">
-								<h2 class="major">📊 Working with Data</h2>
+								<h2 class="major">📈 Working with Data</h2>
 								<nav>
 									<ul>
 										<li><a href="#projects"> Back to Projects</a></li>
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
-								<h3>Ecosystem Modelling (LPJ-GUESS)</h3>
+								<!-- Basketball Analytics -->
+								<button type="button" class="collapsible">🏀 Basketball Analytics</button>
+								<div class="contentcollapse">
+								<p><b></b></p>
+								<p><b>Pre-All Star Weekend NBA Team Efficiency Stats</b></p>
+								<p>Offensive and defensive ratings are advanced basketball statistics for measuring individual and team impact on the court. While having a high offensive rating is valuable, a high defensive rating is an indicator of poor defensive effort. Here I evaluated the offensive and defensive ratings of NBA teams before the All Star Weekend, a point where teams usually reflect on their standings and make decisions based on their updated expectations for the rest of the season.</p>
+								<span class="image main"><img src="images/bignba3.png" alt="" /></span>
+								<p>To produce this figure, I first scraped data from the website Basketball Reference using <b>Beautiful Soup</b>, a webscraping package for <b>Python</b>. I filtered individual player data by team and number of games played, excluding those that had participated in less than 30 regular season games to remove outliers. The resulting dataframe was exported into a CSV file for plotting in <b>RStudio</b>. Looking at the <b>summary()</b> function in R, I decided to create a filter to identify the best well-balanced teams, in this case those above the 3rd Quartile in offensive rating, and below the 1st Quartile in defensive rating. Finally, I visualized this filter by applying <b>geom_mark_ellipse()</b>, a function for annotating areas with elipses in <b>ggplot2</b>. The final product indicates that Cleveland Cavaliers, Miami Heat, and Memphis Grizzlies are the best well-balanced teams at this point in the season.</p>
+								</div>
+								<!-- Ecosystem Modelling -->
+								<button type="button" class="collapsible">🌱 Ecosystem Modelling</button>
+								<div class="contentcollapse">
+								<p><b></b></p>
+								<h3>Vegetation Dynamics in LPJ-GUESS</h3>
 								<p><b>Uncertainty and sensitivity analysis</b></p>
 								<p>The following figures where produced in <b>Python</b> using the data visualization libraries <b>Matplotlib</b> and <b>Seaborn</b>. The range of uncertainty was created using the <b>matplotlib.pyplot.fill_between</b> function after determining the maximum and minimum values of the variables of interest. A series of randomly generated parameters were produced using a Monte Carlo approach to evaluate the sensitivity of the model to uncertainty.</p>
 								<span class="image main"><img src="images/parameter.png" alt="" /></span>
@@ -89,21 +103,24 @@
 								<p>We can conclude that increasing temperature produces environmental conditions favorable for BNS trees, changing from a grass-dominated biome to a boreal forest. Since trees have more living tissue, they have higher respiration rates which cause the decline in CUE.</p>
 								<p><b>References:</b></p>
 								<p><i>Bradford, M. A., & Crowther, T. W. (2013). Carbon use efficiency and storage in terrestrial ecosystems. The New Phytologist, 199(1), 7–9.</i></p>
+								</div>
 							</article>
 
 						<!-- Research -->
 							<article id="research">
-								<h2 class="major">🔬 My Research</h2>
+								<h2 class="major">🔬 Science Communication</h2>
 								<nav>
 									<ul>
 										<li><a href="#projects"> Back to Projects</a></li>
 										<!--<li><a href="#elements">Elements</a></li>-->
 									</ul>
 								</nav>
-								<h3>Biochemistry</h3>
+								<h3>🦠 Biochemistry</h3>
 								<p><b>Antigen production</b></p>
+								<p>This infographic was created in the graphic design platform <b>Canva</b>, and is inspired by my work as a research assistant at Vanderbilt University. After testing several strategies for protein expression and purification, I presented my results to the lab showing how to produce antigens in different scenarios like the one displayed below.</p>
 								<span class="image main"><img src="images/SUMO.png" alt="" /></span>
-								<h3>Visual Ecology & Behavior</h3>
+								<h3>👀 Visual Ecology & Behavior</h3>
+								<p>I conducted research at a visual ecology and behavior lab focused on jumping spider vision during my time as a Biology undergrad. I presented these posters about my research at different poster sessions.</p>
 								<p><b>Arena trials</b></p>
 								<div id="demo" >
 									<img src="images/LEE-SIP.jpg" />
