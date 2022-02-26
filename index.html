@@ -75,10 +75,14 @@
 								<button type="button" class="collapsible">🏀 Basketball Analytics</button>
 								<div class="contentcollapse">
 								<p><b></b></p>
+								<p><b>NBA Regular Season Wins 1990-2020</b></p>
+								<span class="image main"><img src="images/nba_wins.gif" alt="" /></span>
 								<p><b>Pre-All Star Weekend NBA Team Efficiency Stats</b></p>
 								<p>Offensive and defensive ratings are advanced basketball statistics for measuring individual and team impact on the court. While having a high offensive rating is valuable, a high defensive rating is an indicator of poor defensive effort. Here I evaluated the offensive and defensive ratings of NBA teams before the All Star Weekend, a point where teams usually reflect on their standings and make decisions based on their updated expectations for the rest of the season.</p>
 								<span class="image main"><img src="images/bignba3.png" alt="" /></span>
 								<p>To produce this figure, I first scraped data from the website Basketball Reference using <b>Beautiful Soup</b>, a webscraping package for <b>Python</b>. I filtered individual player data by team and number of games played, excluding those that had participated in less than 30 regular season games to remove outliers. The resulting dataframe was exported into a CSV file for plotting in <b>RStudio</b>. Looking at the <b>summary()</b> function in <b>R</b>, I decided to create a filter to identify the best well-balanced teams, in this case those above the 3rd Quartile in offensive rating, and in the 1st Quartile in defensive rating. Finally, I visualized this filter by applying <b>geom_mark_ellipse()</b>, a function for annotating areas with elipses in <b>ggplot2</b>. The final product indicates that Cleveland Cavaliers, Miami Heat, and Memphis Grizzlies are the best well-balanced teams at this point in the season.</p>
+								<span class="image main"><img src="images/nbaefficiency.png" alt="" /></span>
+								<p>Finally, I tidied up the plot by replacing the previous filter for a simple ellipse using the function <b>geom_ellipse()</b>.</p>
 								</div>
 								<!-- Ecosystem Modelling -->
 								<button type="button" class="collapsible">🌱 Ecosystem Modelling</button>
