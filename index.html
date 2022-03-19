@@ -84,15 +84,25 @@
 								<span class="image main"><img src="images/nbaefficiency.png" alt="" /></span>
 								<p>Finally, I tidied up the plot by replacing the previous best defense and offense filter for a simple ellipse using the function <code>geom_ellipse()</code>.</p>
 								</div>
+								<!-- Spatial Data -->
+								<button type="button" class="collapsible">🧭 Spatial Data</button>
+								<div class="contentcollapse">
+								<p><b></b></p>
+								<p><b>iNaturalist Observations at Höjeåvägens Fågelskådartorn, Lund</b></p>
+								<span class="image main"><img src="images/river_birds.png" alt="" /></span>
+								<p>Höjeåvägens Fågelskådartorn is a small bird watching area on the outskirts of Lund. I plotted this map of the area using the <b>basemap</b> extension of <b>Matplotlib</b> in <b>Python</b>. I collected bird observations data at Lunds Kommun from the citizen science platform iNaturalist, and filtered the data points to keep the ones whose coordinates belonged to the site. Then, I searched for the EPSG coordinates of the location, assigned <code>projection = "mill"</code> to use the Miller Cylindrical Projection, and used <code>plot_map(service='World_Topo_Map')</code> to set a background image from ArcGIS.</p>
+								<span class="image main"><img src="images/bird_bar.png" alt="" /></span>
+								<p>Additionally, I made a bar plot with the total number of observed birds by taxon family, for which I used the function <code>value_counts()</code> to determine how many individuals belonged to each family in my dataset. As expected for a freshwater site, most birds in the sample are aquatic species, mainly dominated by the family Anatidae to which ducks, swans, and geese belong.</p>
+								</div>
 								<!-- Ecosystem Modelling -->
 								<button type="button" class="collapsible">🌱 Ecosystem Modelling</button>
 								<div class="contentcollapse">
 								<p><b></b></p>
 								<h3>Vegetation Dynamics in LPJ-GUESS</h3>
 								<p><b>Uncertainty and sensitivity analysis</b></p>
-								<p>The following figures were produced in <b>Python</b> using the data visualization libraries <b>Matplotlib</b> and <b>Seaborn</b>. A series of 200 simulation runs using randomly generated parameters were produced using the Monte Carlo method to find the optimized parameter that gave the minimum RMSE. The range of the simulation runs displayed in light blue on Figure 1 was created using the <code>matplotlib.pyplot.fill_between()</code> function after determining the maximum and minimum values of the total set of simulations.</p>
+								<p>The following figures were produced in <b>Python</b> using the data visualization libraries <b>Matplotlib</b> and <b>Seaborn</b>. A series of 200 simulation runs using changing sets of randomly generated parameters were produced with the Monte Carlo method to find which parameters the simulation is most sensitive to, and to determine via optimization which set of parameters gives the minimum RMSE. The range of the simulation runs displayed in light blue on Figure 1 was created using the <code>matplotlib.pyplot.fill_between()</code> function after determining the maximum and minimum values of the total set of simulations.</p>
 								<span class="image main"><img src="images/parameter.png" alt="" /></span>
-								<p><i><b>Figure 1:</b> The simulation with the optimized parameter tends to overestimate the observed values during the winter. Negative values obtained during summer months indicate an uptake of C, while positive values during winter months indicate a release of C. The gap between observations and simulations in the transition from the summer to the winter months may be due to misreading errors from the eddy-covariance flux towers during unstable autumn weather.</i></p>
+								<p><i><b>Figure 1:</b> The simulations tend to overestimate the observed values during the winter. Negative values obtained during summer months indicate an uptake of C, while positive values during winter months indicate a release of C. The gap between observations and simulations in the transition from the summer to the winter months may be due to misreading errors from the eddy-covariance flux towers during unstable autumn weather.</i></p>
 								<span class="image main"><img src="images/NPP.png" alt="" /></span>
 								<p><i><b>Figure 2:</b> The cumulative change in vegetation C stocks, measured by the net primary production (NPP), experiences a linear increase over time. Uncertainty at the beginning of the simulation is very low and also experiences a gradual increase.</i></p>
 								<span class="image main"><img src="images/NEE.png" alt="" /></span>
