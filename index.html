@@ -84,19 +84,13 @@
 								<span class="image main"><img src="images/nbaefficiency.png" alt="" /></span>
 								<p>Finally, I tidied up the plot by replacing the previous best defense and offense filter for a simple ellipse using the function <code>geom_ellipse()</code>.</p>
 								</div>
-								<!-- Spatial Data -->
+								<!-- Spatial Analysis -->
 								<button type="button" class="collapsible">🧭 Spatial Data</button>
 								<div class="contentcollapse">
 								<p><b></b></p>
-								<p><b>Mapping iNaturalist Observations with basemap</b></p>
-								<span class="image main"><img src="images/river_birds.png" alt="" /></span>
-								<p>Höjeåvägens Fågelskådartorn is a small bird watching area on the outskirts of Lund. I plotted this map of the area using the <b>basemap</b> extension of <b>Matplotlib</b> in <b>Python</b>. I collected bird observations data at Lunds Kommun from the citizen science platform iNaturalist, and filtered the data points to keep the ones whose coordinates belonged to the site. Then, I searched for the EPSG coordinates of the location, assigned <code>projection = "mill"</code> to use the Miller Cylindrical Projection, and used <code>plot_map(service='World_Topo_Map')</code> to set a background image from ArcGIS.</p>
-								<span class="image main"><img src="images/bird_bar.png" alt="" /></span>
-								<p>Additionally, I made a bar plot with the total number of observed birds by taxon family, for which I used the function <code>value_counts()</code> to determine how many individuals belonged to each family in my dataset. As expected for a freshwater site, most birds in the sample are aquatic species, mainly dominated by the family Anatidae to which ducks, swans, and geese belong.</p>
-								<p><b>Mapping iNaturalist Observations with cartopy</b></p>
-								<span class="image main"><img src="images/river_birds_carto_sat.png" alt="" /></span>
-								<span class="image main"><img src="images/river_birds_carto_map.png" alt="" /></span>
-								<p>We can obtain better results when plotting geospatial data if we use the <b>cartopy</b> package for <b>Python</b>. The satellite image was produced using <code>QuadtreeTiles</code>, while I used Open Street Map <code>OSM</code> for the street map.</p>
+								<h3>@geoglaucus</h3>
+								<p>A personal <b>Twitter</b> project documenting my journey in programming and geospatial analysis.</p>
+								<a class="twitter-timeline" href="https://twitter.com/geoglaucus?ref_src=twsrc%5Etfw">Tweets by geoglaucus</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</div>
 								<!-- Ecosystem Modelling -->
 								<button type="button" class="collapsible">🌱 Ecosystem Modelling</button>
